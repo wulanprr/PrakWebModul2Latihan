@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+    <div class="container">
+        <label for="name">Nama Lengkap:</label>
+        <br>
+        <textarea id="name" name="name" placeholder="Nama Anda" style="height: 50px"></textarea><br><br>
+        <label for="email">Email:</label>
+        <br>
+        <textarea id="email" name="email" placeholder="Email Anda" style="height: 50px"></textarea><br><br>
+        <label for="Alamat">Alamat:</label><br>
+        <textarea id="Alamat" name="Alamat" placeholder="Alamat Anda" style="height: 200px"></textarea><br><br>
+        <button onclick="Submission()">Submit</button>
+      <script>
+      function Submission(){
+          var nameValue = document.getElementById("name").value;
+          var emailValue = document.getElementById("email").value;
+          var alamatValue = document.getElementById("Alamat").value;
+      
+          if (nameValue === "" || emailValue === "" || alamatValue === "") {
+              alert("Anda Harus Mengisi Data dengan Lengkap!!");
+          } else {
+              alert("Berhasilll!");
+          }
+      }
+      </script>
+    </div>
+</body>
+</html>

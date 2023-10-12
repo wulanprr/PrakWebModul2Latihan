@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>
+        PENJUMLAHAN BILANGAN
+    </h1>
+        <div>
+            <form>
+                <p>
+                    Bilangan Pertama: 
+                    <input id="text">
+                    Bilangan Kedua:
+                    <input id="text2">
+                    <br>
+                    <button onclick="Jumlahkan()">Jumlahkan</button>  
+                    <input type="Reset" value="reset">
+                </p>
+            </form>
+        </div>
+    <script> 
+        function Jumlahkan() {
+            var f_num = parseInt(document.getElementById("text").value);
+            var s_num = parseInt(document.getElementById("text2").value);
+            var sum = f_num + s_num;
+            alert("Hasil Penjumlahan: " + sum);
+        }
+        
+    </script>
+
+</body>
+</html>
